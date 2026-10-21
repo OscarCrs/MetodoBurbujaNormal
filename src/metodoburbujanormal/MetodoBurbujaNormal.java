@@ -49,14 +49,19 @@ public class MetodoBurbujaNormal {
         }
     }
 
-    // Método principal para pruebas
     public static void main(String[] args) {
-        int[] arregloPrueba = {64, 34, 25, 12, 22, 11, 90};
-        
-        System.out.println("Estado inicial: " + Arrays.toString(arregloPrueba));
-        
-        ordenamientoBurbujaMejorado(arregloPrueba);
-        
-        System.out.println("Resultado final: " + Arrays.toString(arregloPrueba));
+        // Prueba 1: Arreglo desordenado
+        int[] desordenado = {64, 34, 25, 12, 22, 11, 90};
+        System.out.println("--- PRUEBA 1: Arreglo Desordenado ---");
+        System.out.println("Estado inicial: " + Arrays.toString(desordenado));
+        ordenamientoBurbujaMejorado(desordenado);
+        System.out.println("Resultado final: " + Arrays.toString(desordenado));
+
+        // Prueba 2: Arreglo parcialmente ordenado
+        int[] parcialmenteOrdenado = {1, 2, 3, 5, 4};
+        System.out.println("\n--- PRUEBA 2: Arreglo Parcialmente Ordenado ---");
+        System.out.println("Estado inicial: " + Arrays.toString(parcialmenteOrdenado));
+        ordenamientoBurbujaMejorado(parcialmenteOrdenado);
+        System.out.println("Resultado final: " + Arrays.toString(parcialmenteOrdenado));
     }
 }
