@@ -11,7 +11,7 @@ import java.util.Arrays;
 
 public class MetodoBurbujaNormal {
     
-    // Método de burbuja tradicional 🫧
+    // 1. Método de burbuja normal
     public static void ordenamientoBurbuja(int[] arreglo) {
         int n = arreglo.length;
         for (int i = 0; i < n - 1; i++) {
@@ -25,7 +25,7 @@ public class MetodoBurbujaNormal {
         }
     }
 
-    // Método de burbuja mejorado con bandera 🚩
+    // 2. Método de burbuja mejorado con bandera
     public static void ordenamientoBurbujaMejorado(int[] arreglo) {
         int n = arreglo.length;
         boolean huboCambio;
@@ -49,14 +49,14 @@ public class MetodoBurbujaNormal {
         }
     }
 
-    // Método principal para pruebas 🧪
+    // Método principal para pruebas
     public static void main(String[] args) {
         int[] arregloPrueba = {64, 34, 25, 12, 22, 11, 90};
         
-        System.out.println("Estado inicial 📋: " + Arrays.toString(arregloPrueba));
+        System.out.println("Estado inicial: " + Arrays.toString(arregloPrueba));
         
         ordenamientoBurbujaMejorado(arregloPrueba);
         
-        System.out.println("Resultado final ✨: " + Arrays.toString(arregloPrueba));
+        System.out.println("Resultado final: " + Arrays.toString(arregloPrueba));
     }
 }
